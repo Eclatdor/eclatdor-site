@@ -18,7 +18,7 @@ const mockData = [
 ];
 
 export default function App() {
-  const [userRole, setUserRole] = useState(null);
+  const [userRole, setUserRole] = useState<"team" | "buyer" | null>(null);
   const [loggedIn, setLoggedIn] = useState(false);
   const [showPrice, setShowPrice] = useState(false);
   const [password, setPassword] = useState("");
