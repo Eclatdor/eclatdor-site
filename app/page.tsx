@@ -1,41 +1,23 @@
 export default function Home() {
   return (
-    <main style={{
-      height: "100vh",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: "black",
-      flexDirection: "column",
-      textAlign: "center"
-    }}>
-      
-      <img 
-        src="/logo.png" 
-        style={{ width: "700px", maxWidth: "90%" }} 
-      />
+    <main className="h-screen flex items-center justify-center bg-black">
+      <div className="flex flex-col items-center text-center">
 
-      <p style={{
-        color: "#D4AF37",
-        fontSize: "10px",
-        letterSpacing: "0.35em",
-        marginTop: "20px",
-        opacity: 0.8
-      }}>
-        The Nouvelle Ère of Modest Couture
-      </p>
+        <img
+          src="/logo.png"
+          alt="Éclat d'Or"
+          className="w-[700px] max-w-[90%] h-auto"
+        />
 
-      <button style={{
-        marginTop: "40px",
-        border: "1px solid #D4AF37",
-        color: "#D4AF37",
-        padding: "12px 40px",
-        letterSpacing: "0.3em",
-        background: "transparent"
-      }}>
-        Enter
-      </button>
+        <p className="text-[#D4AF37] text-[10px] tracking-[0.35em] uppercase font-light mt-6 opacity-80">
+          The Nouvelle Ère of Modest Couture
+        </p>
 
+        <button className="mt-12 border border-[#D4AF37] text-[#D4AF37] px-12 py-3 tracking-[0.3em] text-xs uppercase hover:bg-[#D4AF37] hover:text-black transition-all duration-300">
+          Enter
+        </button>
+
+      </div>
     </main>
   );
 }
