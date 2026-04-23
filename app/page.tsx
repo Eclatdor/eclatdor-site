@@ -1,8 +1,7 @@
 export default function Home() {
   return (
     <div className="h-screen flex items-center justify-center bg-black">
-
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center">
 
         {/* LOGO */}
         <img
@@ -12,7 +11,7 @@ export default function Home() {
         />
 
         {/* TAGLINE */}
-        <p className="text-[#D4AF37] text-[11px] tracking-[0.35em] uppercase font-light mt-6 text-center opacity-80">
+        <p className="text-[#D4AF37] text-[10px] tracking-[0.35em] uppercase font-light mt-6 text-center opacity-80">
           The Nouvelle Ère of Modest Couture
         </p>
 
@@ -22,7 +21,6 @@ export default function Home() {
         </button>
 
       </div>
-
     </div>
   );
 }
