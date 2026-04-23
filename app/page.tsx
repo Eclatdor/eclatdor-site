@@ -20,9 +20,15 @@ export default function Home() {
     return (
       <div className="h-screen flex items-center justify-center bg-black text-white">
         <div className="text-center space-y-6">
-          <h1 className="text-4xl font-light tracking-widest">
-            ÉCLAT D’OR
-          </h1>
+          <img
+  src="/logo.png"
+  alt="Éclat d'Or"
+  className="w-72 mb-6 mx-auto"
+/>
+
+<p className="text-gray-400 text-center tracking-wide mb-10">
+  The Nouvelle Ère of Modest Couture
+</p>
           <p className="text-sm opacity-70">Private Bridal Showroom</p>
 
           <input
